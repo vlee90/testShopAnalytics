@@ -8,6 +8,9 @@
 
 #import "ShopViewController.h"
 #import "CheckoutViewController.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAITracker.h"
+#import "GAI.h"
 
 @interface ShopViewController ()
 
@@ -25,16 +28,31 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
     self.screenName = @"Shop Screen";
+    [super viewDidAppear:animated];
+    
 }
 
 -(IBAction)buyRedPressed:(id)sender {
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"Button"
+                                                         action:@"Pressed"
+                                                          label:@"Add Red"
+                                                           value:@5] build]];
+    
+    
+    
     self.checkoutVC.numberOfRed++;
     _redLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfRed];
+    
 }
 
 -(IBAction)buyBluePressed:(id)sender {
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"Button"
+                                                          action:@"Pressed"
+                                                           label:@"Add Blue"
+                                                           value:@10] build]];
     self.checkoutVC.numberOfBlue++;
      _blueLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfBlue];
 }

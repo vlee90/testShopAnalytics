@@ -20,8 +20,9 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
     self.screenName = @"ThankYou Screen";
+    [super viewDidAppear:animated];
+    
 }
 
 @end

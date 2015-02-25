@@ -20,6 +20,7 @@
 		630F8EAF1A9E859300952AEE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */; };
 		630F8EB11A9E859C00952AEE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EB01A9E859C00952AEE /* libz.dylib */; };
 		630F8EB31A9E85AC00952AEE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */; };
+		630F8F391A9E897600952AEE /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8F381A9E897600952AEE /* libGoogleAnalyticsServices.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		630F8EB01A9E859C00952AEE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		630F8F381A9E897600952AEE /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				630F8EB31A9E85AC00952AEE /* libsqlite3.dylib in Frameworks */,
 				630F8EB11A9E859C00952AEE /* libz.dylib in Frameworks */,
 				630F8EAF1A9E859300952AEE /* SystemConfiguration.framework in Frameworks */,
+				630F8F391A9E897600952AEE /* libGoogleAnalyticsServices.a in Frameworks */,
 				630F8EAD1A9E858800952AEE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +179,7 @@
 				630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */,
 				630F8EB01A9E859C00952AEE /* libz.dylib */,
 				630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */,
+				630F8F381A9E897600952AEE /* libGoogleAnalyticsServices.a */,
 				630F8EAC1A9E858800952AEE /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -415,6 +419,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestShop/GoogleAnalyticsServicesiOS_3.10",
 					/Users/vincentlee/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)/TestShop",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -430,6 +435,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestShop/GoogleAnalyticsServicesiOS_3.10",
 					/Users/vincentlee/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)/TestShop",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
