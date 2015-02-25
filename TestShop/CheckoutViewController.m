@@ -27,6 +27,11 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.screenName = @"Checkout Screen";
+}
+
 -(IBAction)confirmCheckoutPressed:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     ThankYouViewController *thankYouVC = [storyboard instantiateViewControllerWithIdentifier:@"ThankYouVC"];

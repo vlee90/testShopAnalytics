@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface CheckoutViewController : UIViewController
+@interface CheckoutViewController : GAITrackedViewController
 
 @property NSInteger numberOfRed;
 @property NSInteger numberOfBlue;

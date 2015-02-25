@@ -24,6 +24,11 @@
     self.checkoutVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CheckoutVC"];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.screenName = @"Shop Screen";
+}
+
 -(IBAction)buyRedPressed:(id)sender {
     self.checkoutVC.numberOfRed++;
     _redLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfRed];
