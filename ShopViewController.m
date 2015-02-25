@@ -11,26 +11,29 @@
 
 @interface ShopViewController ()
 
+@property (strong, nonatomic) CheckoutViewController *checkoutVC;
+
 @end
 
 @implementation ShopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.checkoutVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CheckoutVC"];
 }
 
 -(IBAction)buyRedPressed:(id)sender {
-    [self pushToCheckoutVC];
+    self.checkoutVC.numberOfRed++;
+    [self pushToVC:self.checkoutVC];
 }
 
 -(IBAction)buyBluePressed:(id)sender {
-    [self pushToCheckoutVC];
+    self.checkoutVC.numberOfBlue++;
+    [self pushToVC:self.checkoutVC];
 }
 
--(void)pushToCheckoutVC {
-    CheckoutViewController *checkoutVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CheckoutVC"];
-    [self.navigationController pushViewController:checkoutVC animated:true];
+-(void)pushToVC:(UIViewController *)VC {
+    [self.navigationController pushViewController:VC animated:true];
 }
 
 @end

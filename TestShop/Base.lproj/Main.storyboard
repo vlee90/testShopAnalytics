@@ -140,6 +140,10 @@
                             <constraint firstItem="7Nu-HA-rPL" firstAttribute="top" secondItem="M6g-k7-omz" secondAttribute="bottom" constant="30" id="knY-ya-Z4L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="7Nu-HA-rPL" id="0QI-VH-9tE"/>
+                        <outlet property="redLabel" destination="M6g-k7-omz" id="5aO-hk-MHo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2K-aX-edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

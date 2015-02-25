@@ -10,4 +10,7 @@
 
 @interface CheckoutViewController : UIViewController
 
+@property NSInteger numberOfRed;
+@property NSInteger numberOfBlue;
+
 @end
