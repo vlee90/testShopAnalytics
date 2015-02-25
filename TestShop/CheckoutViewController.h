@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CheckoutViewController.h
 //  TestShop
 //
 //  Created by Vincent Lee on 2/25/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CheckoutViewController : UIViewController
 
 @end
-

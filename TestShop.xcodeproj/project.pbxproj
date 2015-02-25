@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		630F8DA31A9E60D400952AEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DA21A9E60D400952AEE /* main.m */; };
 		630F8DA61A9E60D400952AEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DA51A9E60D400952AEE /* AppDelegate.m */; };
-		630F8DA91A9E60D400952AEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DA81A9E60D400952AEE /* ViewController.m */; };
 		630F8DAC1A9E60D400952AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630F8DAA1A9E60D400952AEE /* Main.storyboard */; };
 		630F8DAE1A9E60D400952AEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630F8DAD1A9E60D400952AEE /* Images.xcassets */; };
 		630F8DB11A9E60D400952AEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630F8DAF1A9E60D400952AEE /* LaunchScreen.xib */; };
 		630F8DBD1A9E60D400952AEE /* TestShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DBC1A9E60D400952AEE /* TestShopTests.m */; };
+		630F8DC81A9E638A00952AEE /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DC71A9E638A00952AEE /* ShopViewController.m */; };
+		630F8DCB1A9E639500952AEE /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DCA1A9E639500952AEE /* CheckoutViewController.m */; };
+		630F8DCE1A9E639F00952AEE /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DCD1A9E639F00952AEE /* ThankYouViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		630F8DA21A9E60D400952AEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		630F8DA41A9E60D400952AEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		630F8DA51A9E60D400952AEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		630F8DA71A9E60D400952AEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		630F8DA81A9E60D400952AEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		630F8DAB1A9E60D400952AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		630F8DAD1A9E60D400952AEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		630F8DB01A9E60D400952AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		630F8DB61A9E60D400952AEE /* TestShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		630F8DBB1A9E60D400952AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630F8DBC1A9E60D400952AEE /* TestShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShopTests.m; sourceTree = "<group>"; };
+		630F8DC61A9E638A00952AEE /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopViewController.h; path = ../ShopViewController.h; sourceTree = "<group>"; };
+		630F8DC71A9E638A00952AEE /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopViewController.m; path = ../ShopViewController.m; sourceTree = "<group>"; };
+		630F8DC91A9E639500952AEE /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		630F8DCA1A9E639500952AEE /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		630F8DCC1A9E639F00952AEE /* ThankYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
+		630F8DCD1A9E639F00952AEE /* ThankYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				630F8DA41A9E60D400952AEE /* AppDelegate.h */,
 				630F8DA51A9E60D400952AEE /* AppDelegate.m */,
-				630F8DA71A9E60D400952AEE /* ViewController.h */,
-				630F8DA81A9E60D400952AEE /* ViewController.m */,
+				630F8DC61A9E638A00952AEE /* ShopViewController.h */,
+				630F8DC71A9E638A00952AEE /* ShopViewController.m */,
+				630F8DC91A9E639500952AEE /* CheckoutViewController.h */,
+				630F8DCA1A9E639500952AEE /* CheckoutViewController.m */,
+				630F8DCC1A9E639F00952AEE /* ThankYouViewController.h */,
+				630F8DCD1A9E639F00952AEE /* ThankYouViewController.m */,
 				630F8DAA1A9E60D400952AEE /* Main.storyboard */,
 				630F8DAD1A9E60D400952AEE /* Images.xcassets */,
 				630F8DAF1A9E60D400952AEE /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630F8DA91A9E60D400952AEE /* ViewController.m in Sources */,
+				630F8DCB1A9E639500952AEE /* CheckoutViewController.m in Sources */,
+				630F8DCE1A9E639F00952AEE /* ThankYouViewController.m in Sources */,
 				630F8DA61A9E60D400952AEE /* AppDelegate.m in Sources */,
+				630F8DC81A9E638A00952AEE /* ShopViewController.m in Sources */,
 				630F8DA31A9E60D400952AEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
