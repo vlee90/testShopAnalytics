@@ -12,6 +12,8 @@
 @interface ShopViewController ()
 
 @property (strong, nonatomic) CheckoutViewController *checkoutVC;
+@property (weak, nonatomic) IBOutlet UILabel *redLabel;
+@property (weak, nonatomic) IBOutlet UILabel *blueLabel;
 
 @end
 
@@ -24,11 +26,14 @@
 
 -(IBAction)buyRedPressed:(id)sender {
     self.checkoutVC.numberOfRed++;
-    [self pushToVC:self.checkoutVC];
+    _redLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfRed];
 }
 
 -(IBAction)buyBluePressed:(id)sender {
     self.checkoutVC.numberOfBlue++;
+     _blueLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfBlue];
+}
+- (IBAction)confirmButtonPressed:(id)sender {
     [self pushToVC:self.checkoutVC];
 }
 
