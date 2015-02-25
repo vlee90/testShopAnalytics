@@ -16,6 +16,10 @@
 		630F8DC81A9E638A00952AEE /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DC71A9E638A00952AEE /* ShopViewController.m */; };
 		630F8DCB1A9E639500952AEE /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DCA1A9E639500952AEE /* CheckoutViewController.m */; };
 		630F8DCE1A9E639F00952AEE /* ThankYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630F8DCD1A9E639F00952AEE /* ThankYouViewController.m */; };
+		630F8EAD1A9E858800952AEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EAC1A9E858800952AEE /* CoreData.framework */; };
+		630F8EAF1A9E859300952AEE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */; };
+		630F8EB11A9E859C00952AEE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EB01A9E859C00952AEE /* libz.dylib */; };
+		630F8EB31A9E85AC00952AEE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,20 @@
 		630F8DCA1A9E639500952AEE /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 		630F8DCC1A9E639F00952AEE /* ThankYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThankYouViewController.h; sourceTree = "<group>"; };
 		630F8DCD1A9E639F00952AEE /* ThankYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThankYouViewController.m; sourceTree = "<group>"; };
+		630F8EA11A9E856C00952AEE /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		630F8EA21A9E856C00952AEE /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		630F8EA31A9E856C00952AEE /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		630F8EA41A9E856C00952AEE /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		630F8EA51A9E856C00952AEE /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		630F8EA61A9E856C00952AEE /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		630F8EA71A9E856C00952AEE /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		630F8EA81A9E856C00952AEE /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		630F8EA91A9E856C00952AEE /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		630F8EAA1A9E856C00952AEE /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		630F8EAC1A9E858800952AEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		630F8EB01A9E859C00952AEE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630F8EB31A9E85AC00952AEE /* libsqlite3.dylib in Frameworks */,
+				630F8EB11A9E859C00952AEE /* libz.dylib in Frameworks */,
+				630F8EAF1A9E859300952AEE /* SystemConfiguration.framework in Frameworks */,
+				630F8EAD1A9E858800952AEE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +128,8 @@
 		630F8DA01A9E60D400952AEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				630F8EAB1A9E857800952AEE /* Frameworks */,
+				630F8EA01A9E856C00952AEE /* Library */,
 				630F8DA11A9E60D400952AEE /* Info.plist */,
 				630F8DA21A9E60D400952AEE /* main.m */,
 			);
@@ -127,6 +151,34 @@
 				630F8DBB1A9E60D400952AEE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		630F8EA01A9E856C00952AEE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				630F8EA11A9E856C00952AEE /* GAI.h */,
+				630F8EA21A9E856C00952AEE /* GAIDictionaryBuilder.h */,
+				630F8EA31A9E856C00952AEE /* GAIEcommerceFields.h */,
+				630F8EA41A9E856C00952AEE /* GAIEcommerceProduct.h */,
+				630F8EA51A9E856C00952AEE /* GAIEcommerceProductAction.h */,
+				630F8EA61A9E856C00952AEE /* GAIEcommercePromotion.h */,
+				630F8EA71A9E856C00952AEE /* GAIFields.h */,
+				630F8EA81A9E856C00952AEE /* GAILogger.h */,
+				630F8EA91A9E856C00952AEE /* GAITrackedViewController.h */,
+				630F8EAA1A9E856C00952AEE /* GAITracker.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		630F8EAB1A9E857800952AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				630F8EB21A9E85AC00952AEE /* libsqlite3.dylib */,
+				630F8EB01A9E859C00952AEE /* libz.dylib */,
+				630F8EAE1A9E859300952AEE /* SystemConfiguration.framework */,
+				630F8EAC1A9E858800952AEE /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +411,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestShop/GoogleAnalyticsServicesiOS_3.10",
+					/Users/vincentlee/Downloads/GoogleAnalyticsServicesiOS_3.10,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -369,6 +426,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestShop/GoogleAnalyticsServicesiOS_3.10",
+					/Users/vincentlee/Downloads/GoogleAnalyticsServicesiOS_3.10,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
