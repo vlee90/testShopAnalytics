@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class TAGManager;
+@class TAGContainer;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) TAGContainer *container;
+@property (strong, nonatomic) TAGManager *tagManager;
 
 @end
 
