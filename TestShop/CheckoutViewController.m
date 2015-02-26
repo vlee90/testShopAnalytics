@@ -26,13 +26,16 @@
     self.redLabel.text = [NSString stringWithFormat:@"You have bought %ld red flowers", self.numberOfRed];
     self.blueLabel.text = [NSString stringWithFormat:@"You have bought %ld blue flowers", self.numberOfBlue];
     TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
-    [dataLayer push:@{@"event" : @"screen opened",
+    [dataLayer push:@{@"event" : @"open screen",
                       @"screenName" : @"Checkout Screen"}];
     
 
 }
 
 -(IBAction)confirmCheckoutPressed:(id)sender {
+    TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+    [dataLayer push:@{@"event" : @"button pressed",
+                       @"boughtColor" : @"Checkout Complete"}];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     ThankYouViewController *thankYouVC = [storyboard instantiateViewControllerWithIdentifier:@"ThankYouVC"];
     [self.navigationController pushViewController:thankYouVC animated:true];

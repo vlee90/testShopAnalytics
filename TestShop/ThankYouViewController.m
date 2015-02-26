@@ -24,7 +24,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
-    [dataLayer push:@{@"event" : @"screen opened",
+    [dataLayer push:@{@"event" : @"open screen",
                       @"screenName" : @"ThankYou Screen"}];
 }
 

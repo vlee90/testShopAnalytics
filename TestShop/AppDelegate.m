@@ -10,6 +10,7 @@
 #import "TAGContainer.h"
 #import "TAGContainerOpener.h"
 #import "TAGManager.h"
+#import "TAGDataLayer.h"
 
 @interface AppDelegate ()<TAGContainerOpenerNotifier>
 
@@ -37,8 +38,8 @@
 -(void)containerAvailable:(TAGContainer *)container {
     dispatch_async(dispatch_get_main_queue(), ^{
         self.container = container;
-        [self.tagManager dispatch];
         NSLog(@"AppDelegate: Container Available");
+        [self.container refresh];
     });
 }
 

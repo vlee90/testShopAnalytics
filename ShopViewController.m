@@ -25,20 +25,27 @@
     [super viewDidLoad];
     self.checkoutVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CheckoutVC"];
     TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
-    [dataLayer push:@{@"event" : @"screen opened",
+    [dataLayer push:@{@"event" : @"open screen",
                       @"screenName" : @"Shop Screen"}];
     NSLog(@"Shop ViewDidLoad");
 }
 
 -(IBAction)buyRedPressed:(id)sender {
+    TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+    [dataLayer push:@{@"event" : @"button pressed",
+                      @"boughtColor" : @"Red Color"}];
     self.checkoutVC.numberOfRed++;
     _redLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfRed];
 }
 
 -(IBAction)buyBluePressed:(id)sender {
+    TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+    [dataLayer push:@{@"event" : @"button pressed",
+                      @"boughtColor" : @"Blue Color"}];
     self.checkoutVC.numberOfBlue++;
      _blueLabel.text = [NSString stringWithFormat:@"%ld", (long)self.checkoutVC.numberOfBlue];
 }
+
 - (IBAction)confirmButtonPressed:(id)sender {
     [self pushToVC:self.checkoutVC];
 }
