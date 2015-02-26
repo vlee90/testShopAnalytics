@@ -8,6 +8,8 @@
 
 #import "CheckoutViewController.h"
 #import "ThankYouViewController.h"
+#import "TAGDataLayer.h"
+#import "TAGManager.h"
 
 @interface CheckoutViewController ()
 
@@ -23,6 +25,9 @@
     [super viewDidLoad];
     self.redLabel.text = [NSString stringWithFormat:@"You have bought %ld red flowers", self.numberOfRed];
     self.blueLabel.text = [NSString stringWithFormat:@"You have bought %ld blue flowers", self.numberOfBlue];
+    TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+    [dataLayer push:@{@"event" : @"screen opened",
+                      @"screenName" : @"Checkout Screen"}];
     
 
 }

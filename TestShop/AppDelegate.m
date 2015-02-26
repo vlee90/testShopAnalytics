@@ -28,6 +28,9 @@
                                    openType:kTAGOpenTypePreferFresh
                                     timeout:nil
                                    notifier:self];
+    NSTimeInterval dispatchTime = 5;
+    self.tagManager.dispatchInterval = dispatchTime;
+    NSLog(@"AppDelegate: Call Container");
     return YES;
 }
 
@@ -35,6 +38,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         self.container = container;
         [self.tagManager dispatch];
+        NSLog(@"AppDelegate: Container Available");
     });
 }
 

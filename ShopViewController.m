@@ -8,6 +8,8 @@
 
 #import "ShopViewController.h"
 #import "CheckoutViewController.h"
+#import "TAGManager.h"
+#import "TAGDataLayer.h"
 
 @interface ShopViewController ()
 
@@ -22,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.checkoutVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CheckoutVC"];
+    TAGDataLayer *dataLayer = [TAGManager instance].dataLayer;
+    [dataLayer push:@{@"event" : @"screen opened",
+                      @"screenName" : @"Shop Screen"}];
+    NSLog(@"Shop ViewDidLoad");
 }
 
 -(IBAction)buyRedPressed:(id)sender {
